@@ -10,6 +10,8 @@ public class Review {
     private String image;
 
 
+
+
     //getter created from course repository
     public Long getId() {
         return id;

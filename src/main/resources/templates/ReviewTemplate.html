@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html xmlns:th="htt://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 
-    <title>th: text=</title>
+    <title th:text="Model.name}"A review</title>
 </head>
 <body>
 <header>
-    <h1> A List of All Reviews</h1>
+    <h1> th:text="${reviewModel.title}">A Review</h1>
 </header>
 <main>
 
     <ul>
 
-        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
+        <p><a href="/reviews">Reviews</a></pi>
+        <li th:text="${courseModel.title}"></li>
+        <li th:text="${courseModel.category}"></li>
     </ul>
+    <h2> th:text="${courseModel.category}"</h2>
 </main>
 <footer>
     <small>&copy Rochelle Dishmon 2021</small></footer>
